@@ -1,0 +1,54 @@
+/* Size of container */
+div.container 
+{
+    width: 1440px;
+    height: auto;
+}
+/* Image size and position */
+#image 
+{
+    position: absolute;
+    width: 505px;
+    height: 330px;
+    left: 230px;
+    top: 96px;
+}
+/* Text size, font and position */
+div.container2 
+{
+    position: absolute;
+    width: 380px;
+    height: 250px;
+    left: 830px;
+    top: 136px;
+    font-family: 'Roboto', sans-serif;
+}
+#title
+{
+    color: #121212;
+}
+#t1 
+{
+    color: #121212;;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 150%;  
+}
+.btn
+{
+    color: #FFFFFF;
+    width: 128px;
+    height: 48px;
+    border-radius: 32px;
+    border: solid #E4C1AE 1px;
+    background: #E4C1AE;
+}
+.btn:hover 
+{
+    cursor: pointer;
+    background: #d4a991;
+}
+.btn:active
+{
+    background: #c08c70;
+}
