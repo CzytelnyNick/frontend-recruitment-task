@@ -1,8 +1,11 @@
 /* Size of container */
-div.container 
+.container 
 {
+   
+    position: absolute;
+    
     width: 1440px;
-    height: auto;
+    height: 100%;
 }
 /* Image size and position */
 #image 
@@ -16,6 +19,7 @@ div.container
 /* Text size, font and position */
 div.container2 
 {
+    
     position: absolute;
     width: 380px;
     height: 250px;
@@ -51,4 +55,51 @@ div.container2
 .btn:active
 {
     background: #c08c70;
+}
+/* I can't click button */
+.btn-hide
+{
+    display: disabled;
+    
+    opacity: 0.5;
+    background: #d4a991;
+    color: #FFFFFF;
+}
+
+.box{
+    position: absolute;
+    width: 920px;
+    height: 210px;
+    left: 260px;
+    top: 350px;
+    background-color: #FFFFFF;
+
+}
+/* background color when we click the button */
+.bg {
+    background-color: rgb(137,137,137);
+    opacity: 0.4;
+}
+.box-content
+{
+    font-family:"Roboto", sans-serif;
+    position: absolute;
+    width: 380px;
+    height: 50px;
+    left: calc(50% - 380px/2 - 175px);
+    top: calc(50% - 50px/2 - 24px);
+}
+.close-btn {
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    width: 2px;
+    height: 4px;
+    left: calc(100% - 50px/2);
+    top: calc(10% - 50px/2);
+    color: #121212;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
 }
