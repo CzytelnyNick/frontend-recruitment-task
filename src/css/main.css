@@ -1,7 +1,25 @@
+/* popup animation */
+@keyframes anim{
+    
+    100% {
+         transform: scale(10);
+    }
+}
+@keyframes anim2
+{
+    0%
+    {
+       transform: scale(10)
+    }
+    100%
+    {
+        transform: scale(0)
+    }
+}
 /* Size of container */
 .container 
 {
-   
+    
     position: absolute;
     
     width: 1440px;
@@ -46,6 +64,18 @@ div.container2
     border-radius: 32px;
     border: solid #E4C1AE 1px;
     background: #E4C1AE;
+    font-weight: bold;
+
+}
+.btn2
+{
+    color: #FFFFFF;
+    width: 128px;
+    height: 48px;
+    border-radius: 32px;
+    border: solid #E4C1AE 1px;
+    background: #E4C1AE;
+    font-weight: bold;
 }
 .btn:hover 
 {
@@ -56,7 +86,7 @@ div.container2
 {
     background: #c08c70;
 }
-/* I can't click button */
+
 .btn-hide
 {
     display: disabled;
@@ -67,11 +97,12 @@ div.container2
 }
 
 .box{
+    animation: anim 0.2s linear forwards;
     position: absolute;
-    width: 920px;
-    height: 210px;
-    left: 260px;
-    top: 350px;
+    width: 92px;
+    height: 21px;
+    left: 700px;
+    top: 450px;
     background-color: #FFFFFF;
 
 }
@@ -79,6 +110,7 @@ div.container2
 .bg {
     background-color: rgb(137,137,137);
     opacity: 0.4;
+    
 }
 .box-content
 {
@@ -86,20 +118,39 @@ div.container2
     position: absolute;
     width: 380px;
     height: 50px;
-    left: calc(50% - 380px/2 - 175px);
-    top: calc(50% - 50px/2 - 24px);
+    left: calc(20% - 24px/2 + 1px);
+    top: calc(70% - 24px/2 + 1px);
+    font-size: 1.6px;
 }
 .close-btn {
     font-family: 'Roboto', sans-serif;
     position: absolute;
     width: 2px;
     height: 4px;
-    left: calc(100% - 50px/2);
-    top: calc(10% - 50px/2);
+    right: calc(32% - 50px/2);
+    top: calc(25% - 50px/2);
     color: #121212;
-    font-size: 15px;
+    font-size: 2px;
     font-weight: bold;
     text-align: center;
     line-height: 50px;
+    cursor: pointer;
+}
+.reset-btn {
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    left: calc(100% - 90px/2);
+    top: calc(100% - 30px/2);
+    width: 9.8px;
+    height: 4.8px;
+    color: white;
+    border-radius: 32px;
+    border: solid #E4C1AE 1px;
+    background: #E4C1AE;
+    font-size: 2px;
+    font-weight: bold;
+    padding: 1px;
+    text-align: center;
+    line-height: 1.0px;
     cursor: pointer;
 }
